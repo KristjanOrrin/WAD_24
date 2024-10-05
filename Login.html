@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/styles/Login.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html">Home</a></h1>
+          <div class="profile-icon">
+            <img src="static/images/tartu2024.jpg" alt="Profile Icon" />
+          </div>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Welcome to PostIT</h2>
+        <h3><a class="create-account" href="create-account">Create an Account</a></h3>
+        <h3>or</h3>
+        <h3>Please log in</h3>
+        <form action="index.html" method="get">
+            <div class="input-group">
+                <input type="text" id="username" name="username"  placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <h3><a class="forget-password" href="forget-password">Forget Password?</a></h3>
+    </div>      
+</body>
+</html>
