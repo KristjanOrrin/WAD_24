@@ -94,13 +94,6 @@ h2, h3 {
     margin-bottom: 15px;
 }
 
-.input-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
 .input-group input {
     width: 70%;
     padding: 10px;
