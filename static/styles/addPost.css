@@ -40,13 +40,13 @@ nav a:hover {
     color: #fff; 
 }
 
-.profile-icon {
+.profile {
     margin-left: auto;
     width: 30px;
     height: 30px;
 }
 
-.profile-icon img {
+.profile img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
