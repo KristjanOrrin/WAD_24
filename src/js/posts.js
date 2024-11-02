@@ -31,9 +31,17 @@ function displayPosts(posts) {
 
         // Create the HTML content for the post
         postDiv.innerHTML = `
-            <h2>${post.author} - ${post.createTime}</h2>
-            <p>${post.postBody}</p>
-            <img src="${post.image}" alt="${post.postBody}" />
+            <apost>
+                <info>
+                    <img class="infoimg" src="static/images/profile.jpg" />
+                    <p>${post.createTime}</p>
+                </info>
+                <message>
+                    <img class="msgimg" src="${post.image}" />
+                    <p>${post.postBody}</p>
+                     <img class="likeimg" src="static/images/like1.png" />
+                </message>
+            </apost>
         `;
 
         // Append the postDiv to the postsContainer
