@@ -1,0 +1,74 @@
+{
+          "Posts": [{
+          "id": 1,
+          "author": "John",
+          "createTime": "2024-10-04 10:36",
+          "postBody": "Exploring the beauty of Tartu!",
+          "image": "static/images/tartu2024.jpg"
+        },
+        {
+          "id": 2,
+          "author": "Jane Smith",
+          "createTime": "2024-10-03 14:14",
+          "postBody": "A lovely day in the city center!",
+          "image": "static/images/raekoda.jpg"
+        },
+        {
+          "id": 3,
+          "author": "Michael",
+          "createTime": "2024-10-02 23:11",
+          "postBody": "Wonderful moments at Raekoda Square.",
+          "image": "static/images/raekoda2.jpg"
+        },
+        {
+          "id": 4,
+          "author": "Peter",
+          "createTime": "2024-10-02 11:11",
+          "postBody": "Shopping spree at Lounakeskus!",
+          "image": "static/images/lounakeskus.jpg"
+        },
+        {
+          "id": 5,
+          "author": "Kaur",
+          "createTime": "2024-10-01 13:11",
+          "postBody": "Beautiful views of the city!",
+          "image": "static/images/linn.jpg"
+        },
+        {
+          "id": 6,
+          "author": "Alex Smith",
+          "createTime": "2024-09-30 17:51",
+          "postBody": "Enjoying the autumn colors in Tartu.",
+          "image": "static/images/autumn.jpg"
+        },
+        {
+          "id": 7,
+          "author": "Linda",
+          "createTime": "2024-09-29 20:23",
+          "postBody": "Amazing sunset by the river.",
+          "image": "static/images/sunset.jpg"
+        },
+        {
+          "id": 8,
+          "author": "Harry",
+          "createTime": "2024-09-28 20:00",
+          "postBody": "Strolling through the old town.",
+          "image": "static/images/oldtown.jpg"
+        },
+        {
+          "id": 9,
+          "author": "Emma",
+          "createTime": "2024-09-27 14:13",
+          "postBody": "Coffee time in the city!",
+          "image": "static/images/coffee.jpg"
+        },
+        {
+          "id": 10,
+          "author": "Chris",
+          "createTime": "2024-09-26 18:50",
+          "postBody": "Meeting friends at the square.",
+          "image": "static/images/square.jpg"
+        }
+      ]
+}
+      
