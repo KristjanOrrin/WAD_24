@@ -47,7 +47,7 @@ apost {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 0px;
     background-color: #e98181;
     border-radius: 15px;
     margin-top: 15px;
@@ -81,19 +81,25 @@ message {
     margin-left: 1vw;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0px;
     align-items: flex-start;
     margin-right: 1vw;
+
     
 }
 
 message p {
     font-size: medium;
+    line-height:1;
 }
 
 img.msgimg {
     width:100%;
-    object-fit: scale-down;
+    
+}
+img.likeimg {
+    width: 30px;
+    margin-bottom: 10px;
 }
 
 footer {
