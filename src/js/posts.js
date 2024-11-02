@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+     // Fetch from local JSON file
+     fetch("data/my.json") // Change this path as needed
+     .then(response => {
+         if (!response.ok) {
+             throw new Error("Network response was not ok " + response.statusText);
+         }
+         return response.json();
+     })
+     .then(data => {
+         const posts = data.Posts; // Adjust according to your JSON structure
+         console.log(posts); // Log posts to check that data retrieval is working
+         displayPosts(posts); // Call the function to display posts
+     })
+     .catch(error => console.error("Error fetching data:", error));
+
+    /*
     fetch("https://api.jsonbin.io/v3/b/672624bbe41b4d34e44d10b5", {
         method: "GET",
         headers: {
@@ -18,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         displayPosts(posts); // Call the function to display posts
     })
     .catch(error => console.error("Error fetching data:", error));
+    */
 });
+
 
 // Function to display posts
 function displayPosts(posts) {
