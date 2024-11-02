@@ -65,6 +65,8 @@ nav a:hover {
 
 /* Login container styling */
 .login-container {
+    display: flex;
+    flex-direction: column;
     background-color: #e98181;
     padding: 20px;
     border: 1px solid #000000;
