@@ -15,7 +15,11 @@
 
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">
-          <img id="navpic" src="static\images\profile.jpg" />
+          <img
+            id="navpic"
+            class="profile-picture"
+            src="static\images\profile.jpg"
+          />
         </button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#">User Name</a>
@@ -42,7 +46,7 @@
 
   // Close the dropdown if the user clicks outside of it
   window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
+    if (!event.target.matches(".profile-picture")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
