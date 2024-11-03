@@ -64,13 +64,12 @@ apost {
 
 logsin {
     display: flex;
-    gap: 5px;
+    gap: 0px;
     margin-left: 1vw;
     margin-right: 1vw;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 0.5vw;
 
 }
 info {
@@ -273,7 +272,7 @@ button:hover {
     width: 100%;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 10px;
 
 }
