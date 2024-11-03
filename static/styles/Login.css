@@ -65,14 +65,12 @@ nav a:hover {
 
 /* Login container styling */
 .login-container {
-    display: flex;
-    flex-direction: column;
     background-color: #e98181;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 200px;
     width: 100%;
     align-items: center;
     text-align: center;

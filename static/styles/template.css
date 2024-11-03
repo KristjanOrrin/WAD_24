@@ -264,7 +264,6 @@ button:hover {
 /* Login container styling */
 .login-container {
     justify-content: center;
-    display: flex;
     flex-direction: column;
     background-color: #e98181;
     padding: 20px;
@@ -280,7 +279,7 @@ button:hover {
     border-radius: 10px;
     @media (max-width: 768px) {
         width: 90%;
-        margin-bottom: 100px;
+        margin-bottom: 400px;
     }
 }
 
