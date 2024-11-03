@@ -51,13 +51,13 @@ function displayPosts(posts) {
         postDiv.innerHTML = `
             <apost>
                 <info>
-                    <img class="infoimg" src="static/images/profile.jpg" />
-                    <p>${post.createTime}</p>
+                    <img class="infoimg" src="${post.profileImage}" />
+                    <p><strong>${post.createTime}</strong></p>
                 </info>
                 <message>
                     <img class="msgimg" src="${post.image}" />
                     <p>${post.postBody}</p>
-                     <img class="likeimg" src="static/images/like1.png" />
+                     <img class="likeimg" src="static/images/heart.png" />
                 </message>
             </apost>
         `;
