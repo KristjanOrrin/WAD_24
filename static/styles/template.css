@@ -50,6 +50,8 @@ posts {
     padding: 5px;
 }
 
+
+
 apost {
     display: flex;
     flex-direction: column;
@@ -209,6 +211,7 @@ footerdown {
 }
 #main-container {
     background-color: #f9f9f9;
+    margin-top: 30px;
 }
 
 .form-container label {
@@ -273,8 +276,12 @@ button:hover {
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
-
+    @media (max-width: 768px) {
+        width: 90%;
+        margin-bottom: 100px;
+    }
 }
 
 /* Title styling */
