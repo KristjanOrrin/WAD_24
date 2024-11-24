@@ -3,8 +3,8 @@ import MainPage from "@/views/MainPage.vue";
 import SignupPage from "@/views/SignupPage.vue";
 
 const routes = [
-  { path: "/", component: MainPage },
-  { path: "/signup", component: SignupPage },
+  { path: "/", name: "MainPage", component: MainPage },
+  { path: "/signup", name: "SignupPage", component: SignupPage },
 ];
 
 const router = createRouter({

@@ -12,7 +12,15 @@ const store = createStore({
         profileImage: "static/images/profile.jpg",
         likes: 0,
       },
-      // Lisa rohkem postitusi...
+      {
+        id: 2,
+        author: "Jane Smith",
+        createTime: "2024-10-03 14:14",
+        postBody: "A lovely day in the city center!",
+        image: "static/images/raekoda.jpg",
+        profileImage: "static/images/profile2.jpg",
+        likes: 0,
+      },
     ],
   },
   mutations: {
@@ -20,16 +28,10 @@ const store = createStore({
       const post = state.posts.find((p) => p.id === postId);
       if (post) post.likes++;
     },
-    resetLikes(state) {
-      state.posts.forEach((post) => (post.likes = 0));
-    },
   },
   actions: {
     likePost({ commit }, postId) {
       commit("incrementLikes", postId);
-    },
-    resetAllLikes({ commit }) {
-      commit("resetLikes");
     },
   },
   getters: {

@@ -1,29 +1,26 @@
 <template>
-  <div>
-    <Header />
-    <div class="posts">
-      <Post v-for="post in posts" :key="post.id" :post="post" />
-    </div>
-    <button @click="resetLikes">Reset All Likes</button>
-    <Footer />
+  <div class="posts-container">
+    <AppPost v-for="post in allPosts" :key="post.id" :post="post" />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import Post from "@/components/Post.vue";
+import AppPost from "@/components/AppPost.vue";
 
 export default {
-  components: { Header, Footer, Post },
-  computed: {
-    ...mapGetters(["allPosts"]),
+  name: "MainPage",
+  components: {
+    AppPost,
   },
-  methods: {
-    resetLikes() {
-      this.$store.dispatch("resetAllLikes");
-    },
+  computed: {
+    ...mapGetters(["allPosts"]), // Kasutame VueX getterit otse
   },
 };
 </script>
+
+<style scoped>
+.posts-container {
+  padding: 20px;
+}
+</style>

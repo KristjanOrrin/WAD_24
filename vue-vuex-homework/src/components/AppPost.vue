@@ -1,12 +1,16 @@
 <template>
   <div class="post">
     <div class="post-header">
-      <img :src="post.profileImage" class="profile-pic" />
-      <p>{{ post.createTime }}</p>
+      <img :src="post.profileImage" alt="Profile" class="profile-pic" />
+      <p>
+        <strong>{{ post.author }}</strong> - {{ post.createTime }}
+      </p>
     </div>
     <div class="post-body">
       <p>{{ post.postBody }}</p>
-      <img :src="post.image" class="post-image" />
+      <img :src="post.image" alt="Post" class="post-image" />
+    </div>
+    <div class="post-footer">
       <button @click="likePost">Like ({{ post.likes }})</button>
     </div>
   </div>
@@ -14,8 +18,13 @@
 
 <script>
 export default {
-  name: "Post",
-  props: ["post"],
+  name: "AppPost",
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    },
+  },
   methods: {
     likePost() {
       this.$store.dispatch("likePost", this.post.id);
@@ -26,11 +35,10 @@ export default {
 
 <style scoped>
 .post {
-  margin: 10px;
-  padding: 10px;
   border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
   border-radius: 5px;
-  background-color: #f9f9f9;
 }
 .profile-pic {
   width: 40px;
