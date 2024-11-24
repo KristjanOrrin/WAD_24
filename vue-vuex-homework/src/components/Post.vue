@@ -11,7 +11,10 @@
       <img :src="post.image" alt="Post" class="post-image" />
     </div>
     <div class="post-footer">
-      <button @click="likePost">Like ({{ post.likes }})</button>
+      <div class="like-button" @click="likePost">
+        <img src="images/heart.png" alt="Like" class="like-icon" />
+        <span>{{ post.likes }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -40,13 +43,41 @@ export default {
   margin: 10px 0;
   border-radius: 5px;
 }
+
 .profile-pic {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
+
 .post-image {
   width: 100%;
   margin-top: 10px;
+}
+
+.post-footer {
+  margin-top: 10px;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.like-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+}
+
+.like-icon:hover {
+  transform: scale(1.2);
+}
+
+span {
+  font-size: 14px;
+  color: #555;
 }
 </style>
