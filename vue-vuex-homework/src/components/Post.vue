@@ -40,8 +40,9 @@ export default {
 .post {
   border: 1px solid #ddd;
   padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
+  margin: 10px 10%;
+  border-radius: 15px;
+  background-color: #e98181;
 }
 
 .profile-pic {
