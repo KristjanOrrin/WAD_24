@@ -3,10 +3,6 @@
     <h2>Sign Up</h2>
     <form @submit.prevent="validateForm">
       <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" v-model="username" required />
-      </div>
-      <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" v-model="email" required />
       </div>
