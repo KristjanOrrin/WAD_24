@@ -1,24 +1,28 @@
 <template>
-  <div class="signup-container">
-    <h2>Sign Up</h2>
-    <form @submit.prevent="validateForm">
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          v-model="password"
-          required
-          @input="validatePassword"
-        />
-        <p v-if="passwordError" class="error-message">{{ passwordError }}</p>
-      </div>
-      <button type="submit">Sign Up</button>
-    </form>
+  <div class="signup-wrapper">
+    <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form @submit.prevent="validateForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" v-model="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            v-model="password"
+            required
+            @input="validatePassword"
+          />
+          <p v-if="passwordError" class="error-message">{{ passwordError }}</p>
+        </div>
+        <div class="button-group">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -72,42 +76,70 @@ export default {
 </script>
 
 <style scoped>
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Tagab nähtava footeri */
+  background-color: #f4f4f9;
+}
+
 .signup-container {
   max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
+  width: 100%;
+  padding: 20px 30px; /* Lisatud sümmeetriline padding */
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box; /* Lisatud box-sizing */
 }
+
+h2 {
+  text-align: center;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
+
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 input {
-  width: 100%;
+  width: calc(100% - 10px); /* Võtab kogu kasti laiuse */
   padding: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 14px;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
 button {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
+
 button:hover {
   background-color: #0056b3;
 }
+
 .error-message {
   color: red;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 </style>
