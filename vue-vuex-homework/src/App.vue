@@ -24,6 +24,7 @@ export default {
   display: flex;
   flex-direction: column;   /* Paigutab sisu vertikaalselt */
   min-height: 100vh;         /* Tagab, et kogu leht katab ekraani kõrguse */
+  font-family: 'Roboto', sans-serif;
 }
 
 router-view {
