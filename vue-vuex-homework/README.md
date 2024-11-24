@@ -1,4 +1,4 @@
-# vuewad24
+# vue-vuex-homework
 
 ## Project setup
 ```
