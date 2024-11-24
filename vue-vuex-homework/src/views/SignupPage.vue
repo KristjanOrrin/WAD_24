@@ -67,6 +67,7 @@ export default {
       this.validatePassword();
       if (!this.passwordError) {
         alert("Form submitted successfully!");
+        this.$router.push("/"); // Suuna MainPage lehele
       } else {
         alert("Please fix the password issues before submitting.");
       }
@@ -94,6 +95,7 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   box-sizing: border-box; /* Lisatud box-sizing */
+  background-color: #e98181;
 }
 
 h2 {
