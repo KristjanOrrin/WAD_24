@@ -19,13 +19,18 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;   /* Paigutab sisu vertikaalselt */
+  min-height: 100vh;         /* Tagab, et kogu leht katab ekraani kõrguse */
+}
+
+router-view {
+  flex-grow: 1;              /* Täidab kogu ruumi, et sisu kasvaks */
+}
+
+footer {
+  margin-top: auto;          /* Paigutab jala lõppu, kui sisu on väike */
 }
 </style>
