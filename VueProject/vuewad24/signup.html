@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/styles/template.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" style="color: #000000; text-decoration: none"
+            >Home</a
+            >
+            <a href="addPost.html" style="color: #000000; text-decoration: none"
+            >Add Post</a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <img
+                            id="navpic"
+                            class="profile-picture"
+                            src="static\images\profile.jpg"
+                    />
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">John Doe</a>
+                    <a href="#">john.doe@ut.ee</a>
+                    <a href="Login.html">Log out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <logsin>
+        <div class="login-container">
+            <h2 id="main-title">Welcome to PostIT</h2>
+            <h3><a class="create-account" href="create-account">Create an Account</a></h3>
+            <h3>or</h3>
+            <h3>Please log in</h3>
+            <form action="index.html" method="get">
+                <div class="input-group">
+                    <input type="text" id="username" name="username"  required placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+                <div class="input-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <h3><a class="forget-password" href="forget-password">Forget Password?</a></h3>
+        </div>
+    </logsin>
+    <footerdown>
+        <p>Tartu Ülikool, Computer Science 2024</p>
+    </footerdown>
+</body>
+</html>

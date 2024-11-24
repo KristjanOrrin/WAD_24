@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>index</title>
+    <title>main</title>
     <link rel="stylesheet" href="static\styles\template.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
@@ -32,11 +32,17 @@
 
     <div id="posts"></div>
 
-    <script src="src/js/posts.js"></script>
-
-    <footer>
-      <p>Tartu Ülikool, Computer Science 2024</p>
-    </footer>
+    <div id="app"></div>
+    <script src="src/components/Footer.vue"></script>
+    <script>
+        new Vue({
+          el: '#app',
+          components: {
+            Footer
+          }
+        })
+    </script>
+    
   </body>
 </html>
 
